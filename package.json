@@ -1,0 +1,26 @@
+{
+	"name": "discord-bulletiser",
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --open --host",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig tsconfig.json",
+		"deploy": "surge dist/ https://discord-bulletiser-shane4368.surge.sh"
+	},
+	"devDependencies": {
+		"@shane4368/css-library": "github:shane4368/css-library",
+		"@sveltejs/vite-plugin-svelte": "^1.0.4",
+		"@tsconfig/svelte": "^3.0.0",
+		"svelte": "^3.50.0",
+		"svelte-check": "^2.9.0",
+		"svelte-preprocess": "^4.10.7",
+		"tslib": "^2.4.0",
+		"typescript": "^4.8.2",
+		"vite": "^3.0.9"
+	},
+	"author": "Shane4368",
+	"license": "UNLICENSED",
+	"private": true
+}
