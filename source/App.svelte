@@ -1,10 +1,10 @@
 <script lang="ts">
 	import {
 		bold,
-		italicise,
+		italicize,
 		underline,
-		bulletise,
-		wrapURL,
+		bulletize,
+		wrapUrl,
 	} from "./utilities/text";
 
 	const titleFormat = {
@@ -26,8 +26,8 @@
 		if (titleValue !== "") result = formatTitle(titleValue);
 
 		if (contentValue !== "") {
-			contentValue = wrapURL(contentValue);
-			result += `\n${bulletise(contentValue, bulletType)}`;
+			contentValue = wrapUrl(contentValue);
+			result += `\n${bulletize(contentValue, bulletType)}`;
 		}
 
 		copyTextToClipboard(result.trimStart());
@@ -41,7 +41,7 @@
 
 	function formatTitle(text: string): string {
 		if (titleFormat.bold) text = bold(text);
-		if (titleFormat.italics) text = italicise(text);
+		if (titleFormat.italics) text = italicize(text);
 		if (titleFormat.underline) text = underline(text);
 
 		return text;
@@ -55,7 +55,7 @@
 </script>
 
 <!-- ========================== CONTENT ========================== -->
-<h1>Bulletiser for Discord</h1>
+<h1>Bulletizer for Discord</h1>
 
 <details>
 	<summary class="white-space-nowrap">
@@ -137,7 +137,7 @@
 	</section>
 </main>
 
-<footer>Copyright © 2020-2022 Shane4368</footer>
+<footer>Copyright © 2020-2023 Shane4368</footer>
 
 <!-- ========================== STYLE ========================== -->
 <style>

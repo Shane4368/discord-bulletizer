@@ -1,9 +1,9 @@
 body {
 	margin: 0 auto;
 	padding: 0 1rem;
-	accent-color: var(--shane4368-colour-green);
-	background-color: var(--colour-background-primary);
-	color: var(--colour-text-secondary);
+	accent-color: var(--shane4368-color-green);
+	background-color: var(--color-background-primary);
+	color: var(--color-text-secondary);
 	max-width: 11in;
 	box-sizing: border-box;
 	line-height: 1.5;
@@ -18,10 +18,10 @@ body {
 h1,
 h2,
 h3 {
-	color: var(--colour-text-primary);
+	color: var(--color-text-primary);
 }
 
 footer {
 	margin: 3rem 0;
-	color: var(--colour-text-tertiary);
+	color: var(--color-text-tertiary);
 }
